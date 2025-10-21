@@ -33,13 +33,17 @@ input.onButtonPressed(Button.B, function () {
     basic.showIcon(IconNames.Happy)
 })
 
+// check which number is higher, then show as an inequality
 input.onGesture(Gesture.Shake, function() {
     basic.clearScreen()
     basic.showNumber(integer1)
     if (integer1 > integer2)
+        // if integer 1 is higher
         basic.showString(" > ")
     else
+        // if integer 2 is higher
         basic.showString(" < ")
     basic.showNumber(integer2)
+    basic.clearScreen()
     basic.showIcon(IconNames.Happy)
 })
